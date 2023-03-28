@@ -1,22 +1,75 @@
 /* centre .titre au milieu de la page */
 #titre {
     text-align: center;
-    color: #000000;
+    background: rgb(255, 255, 255);
+    background-clip: border-box;  
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
 } 
+
+/* BARRE HEADER */
+.navtop {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0;
+}
+
+.navtop div {
+    width: 100%;
+    height: 130px;
+    background-color: #00796B;
+}
+
 
 /* the background is grey */
 body {
-    background-color: #FFDD83;
-/*     margin-right: 50px;
-    margin-left : 50px; */
+    font-family: 'Inter';
+    background-color: #F5F5DC;
+    margin: 0;
 }
+
+h1 {
+    color: #262522
+}
+
+h2 {
+    color: #262522;
+    font-size: 30px;
+}
+
+h3 {
+    color: #262522
+}
+
+h4 {
+    color: #262522
+}
+
+h5 {
+    color: #262522
+}
+
+
+
 #projets {
     /* le texte s'étalle sur toute la page avec un alinea de 20px */
-    background-color: #98DFD6;
+    background-color: #ffffff;
     text-align: justify;
     text-indent: 20px;
     /* cree un rectangle qui est à 20px de chaque coté de l'écran */
     border: 1px solid rgb(182, 182, 182);
+    border-radius: 4px;}
+
+#projets:hover{
+    box-shadow: rgb(182, 182, 182) 0px 0px 10px 0px;
 }
 
 #indent{
@@ -24,43 +77,38 @@ body {
 }
 
 .indent_content{
-    margin-right: 50px;
-    margin-left : 50px; 
+    margin-right: 10%;
+    margin-left : 10%; 
 }
 
 #rubrique {
     text-align: center;
+    font-weight: bold;
+}
+
+.details:hover{
+    cursor: pointer;
 }
 
 #binome {
-    /*texte en italique */
     font-style: italic;
     color: rgb(82, 82, 82);
 }
 
-/* BARRE HEADER */
-.navtop {
-
-    display: flex;
-    align-content: center;
-    justify-content: center;
-}
-
-.navtop div {
-    width: 100%;
-    height: 130px;
-    background: #00235B;
-}
-
-
 .container {
-    width: 100%;
-    max-width: 400px; 
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: none;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
   }
   
 .container .btn {
     transition-duration: 0.4s;
-    background-color: #E21818; /* Green */
+    background-color: #F9A602;
     border: none;
     color: white;
     padding: 5px 10px;
@@ -73,7 +121,7 @@ body {
 }
 
 .container .btn:hover {
-    background-color: #e44040;
+    background-color: rgb(255, 191, 0);
 }
 
 .flag-button {
@@ -81,9 +129,38 @@ body {
 }
 
 .container .flg img{
-    height: 20px;
+    height: 25px;
     width: 40px;
+    border: 0; 
+    background: no-repeat;
+    color:#00DBDE;
+}
+
+#lien{
+    color: #5b105e;
+}
+
+
+.imgD{
+    border: 1px solid rgb(182, 182, 182);
+    width: 25%;
+    height: 25%;
+}
+.imgD:hover{
+    box-shadow: rgb(182, 182, 182) 0px 0px 10px 0px;
+}
+
+/* style for the footer */
+.footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: none;
+    font-size: 12px;
+    color: #000000;
+    text-align: center;
     padding: 0;
-    margin: 0;
-    border: none;
+    z-index: -3;
 }
