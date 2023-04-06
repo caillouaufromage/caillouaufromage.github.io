@@ -86,6 +86,11 @@ h5 {
     font-weight: bold;
 }
 
+#dtxt {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
 .details:hover{
     cursor: pointer;
 }
@@ -124,31 +129,66 @@ h5 {
     background-color: rgb(255, 191, 0);
 }
 
-.flag-button {
+/* .flag-button {
     transition-duration: 0.4s;
 }
-
+ */
 .container .flg img{
     height: 25px;
-    width: 40px;
-    border: 0; 
-    background: no-repeat;
-    color:#00DBDE;
+    width: 30px;
 }
 
+.container .flg {
+    display: inline-block;
+    padding: 1px;
+    border: none;
+    background-color: transparent;
+    margin-left: 5px;
+}
+ 
+ .container .flg:hover {
+    cursor: pointer;
+ }
+ 
+
 #lien{
-    color: #5b105e;
+    color: #00796B;
 }
 
 
 .imgD{
     border: 1px solid rgb(182, 182, 182);
-    width: 25%;
-    height: 25%;
+    width: 45%;
+    height: 45%;
+    max-width: 500px;
+    max-height: 400px;
+    margin: 0 auto;
 }
 .imgD:hover{
     box-shadow: rgb(182, 182, 182) 0px 0px 10px 0px;
 }
+
+.ctc{
+    transition-duration: 0.4s;
+    background-color: #F9A602;
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 12px 16px;
+    font-size: 20px;
+    cursor: pointer;
+    width: 33%;
+    border-radius: 4px;
+    border:#262522
+}
+
+.ctc:hover {
+    background-color: rgb(255, 191, 0);
+}
+
+.ctc:active:after {
+
+}
+
 
 /* style for the footer */
 .footer {
