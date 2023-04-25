@@ -183,7 +183,17 @@ h5 {
 
 .ctc:hover {
     background-color: rgb(255, 191, 0);
+    transform: scale(1.05);
+    border-radius: 4px;
+
 }
+
+.ctc img {
+    width: 45px;
+    height: 45px;
+    margin: left;
+}
+
 
 .ctc:active:after {
 
