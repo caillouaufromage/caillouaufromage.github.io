@@ -158,15 +158,15 @@ h5 {
 
 .imgD{
     border: 1px solid rgb(182, 182, 182);
-    width: 45%;
-    height: 45%;
-    max-width: 500px;
-    max-height: 400px;
+    max-width: 45%;
+    max-height: 45%;
     margin: 0 auto;
+    margin-left: 2%;
 }
+
 .imgD:hover{
     box-shadow: rgb(182, 182, 182) 0px 0px 10px 0px;
-}
+} 
 
 .ctc{
     transition-duration: 0.4s;
